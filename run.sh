@@ -17,5 +17,5 @@ exec qemu-system-aarch64 \
   -device usb-tablet \
   -device intel-hda \
   -device hda-duplex \
-  -drive file=./Ubuntu.qcow2,if=virtio,cache=writethrough \
-  -cdrom ./ubuntu-22.04-live-server-arm64.iso
+  -drive file=./disk.qcow2,if=virtio,cache=writethrough \
+  -cdrom ./debian-11.3.0-arm64-netinst.iso
