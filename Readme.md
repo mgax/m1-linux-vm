@@ -1,7 +1,6 @@
 ```
-curl -OL https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-11.3.0-arm64-netinst.iso
-qemu-img create -f qcow2 disk.qcow2 20G
+curl -OL https://dl-cdn.alpinelinux.org/alpine/v3.16/releases/aarch64/alpine-standard-3.16.0-aarch64.iso
 ./run.sh
 ```
 
-When installing Debian, you might have to [manually select the installation media](https://forums.debian.net/viewtopic.php?p=745287&sid=481143c5ddc446936e4108f9f88e1e4a#p745287).
+After the VM boots, from the terminal (not the graphical window), log in as `root`, and copy/paste the commands in `alpine-desktop.sh`.
